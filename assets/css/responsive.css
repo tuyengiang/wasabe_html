@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+    .category-item .category-item-content h3 {
+        font-size: 15px;
+    }
+
+    section#sec-category {
+        margin-top: 30px !important;
+    }
+
+    section#sec-category .full-home-sale a {
+        flex-basis: calc(100% / 2);
+    }
+
+    section#sec-slide .slide-item img {
+        height: unset;
+    }
+
+    .category-item img {
+        height: 150px;
+    }
+
+    button.slick-next.slick-arrow {
+        right: 5px;
+    }
+
+    button.slick-prev.slick-arrow {
+        left: 5px;
+    }
+
+    footer#footer .footer-top {
+        margin-bottom: 20px;
+    }
+
+    .header-action {
+        height: 88px !important;
+        display: flex;
+        align-items: center;
+        margin: 0px !important;
+    }
+
+    #top-bar .header-info > ul > li:hover > ul.language-dropdown {
+        right: 0px;
+        left: unset !important;
+    }
+
+    #header .header-action .header-action-icon-2:last-child {
+        padding-right: 0px !important;
+    }
+
+    #header .header-action .header-action-icon-2 {
+        padding: 0 10px;
+    }
+
+    .show-block {
+        display: block !important;
+    }
+
+    .menu-mobile li {
+        list-style: none;
+        padding: 10px 15px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .menu-mobile ul {
+        padding: 0px !important;
+    }
+}
+
+/* iPad landscape style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* iPad landscape style here */
+}
+
+/* iPad portrait style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}

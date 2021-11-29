@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wasabe</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/owl/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="lib/owl/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/mmenu-js/dist/mmenu.css">
+    <link rel="stylesheet" href="lib/fancybox/dist/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--script-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/owl/dist/owl.carousel.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/mmenu-js/dist/mmenu.js"></script>
+    <script src="lib/fancybox/dist/jquery.fancybox.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<!--menu mobile--->
+<div id="mobile-menu">
+    <div id="panel-menu">
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="">Sản phẩm mới</a></li>
+                <li><a href="">Đồ cũ – Cho thuê</a></li>
+                <li><a href="">Trao đổi</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end menu mobile-->
+
+<div id="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-sm-6">
+                <div class="top-bar-link">
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Kênh bán hàng
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-sm-6">
+                <div class="header-info header-info-right">
+                    <ul>
+                        <li>
+                            <a class="language-dropdown-active" href="#">
+                                <img src="assets/images/vn.svg" title="Tiếng Việt" width="16" alt="Tiếng Việt">Tiếng
+                                Việt
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <ul class="language-dropdown ">
+                                <li>
+                                    <a rel="alternate" hreflang="en" href="">
+                                        <img src="assets/images/us.svg" title="English" width="16" alt="English"><span>English</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--top-bar-->
+
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-2 col-lg-2 col-xl-2">
+                <div id="logo"><a href=""><img src="assets/images/logo.png" alt=""></a></div>
+            </div>
+            <div class="col-md-8 col-lg-8 col-xl-8 d-none d-lg-block">
+                <div class="header-center">
+                    <form action="" class="formSearch" method="POST">
+                        <input type="search" class="form-control" id="s" placeholder="Nhập tên sản phẩm...">
+                        <button type="submit" class="btnSearch"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="header-bottom">
+                        <ul>
+                            <li><a href="">Sản phẩm mới</a></li>
+                            <li><a href="">Đồ cũ – Cho thuê</a></li>
+                            <li><a href="">Trao đổi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-2 col-lg-2 col-xl-2">
+                <div class="header-action">
+                    <div class="header-action-icon-2">
+                        <a href="" class="notification-count">
+                            <i class="fa fa-bell"></i>
+                            <span class="pro-count blue"><span>0</span></span>
+                        </a>
+                    </div>
+                    <div class="header-action-icon-2">
+                        <a href="" class="cart-count">
+                            <svg viewBox="0 0 26.6 25.6" class="shopee-svg-icon navbar__link-icon icon-shopping-cart-2">
+                                <polyline fill="none" points="2 1.7 5.5 1.7 9.6 18.3 21.2 18.3 24.6 6.1 7 6.1"
+                                          stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                          stroke-width="2.5"></polyline>
+                                <circle cx="10.7" cy="23" r="2.2" stroke="none"></circle>
+                                <circle cx="19.7" cy="23" r="2.2" stroke="none"></circle>
+                            </svg>
+                            <span class="pro-count blue"><span>0</span></span>
+                        </a>
+                    </div>
+                    <div class="header-action-icon-2">
+                        <a href="">
+                            <i class="fa fa-user-o"></i>
+                        </a>
+                    </div>
+                    <div class="header-action-icon-2 d-none show-block">
+                        <a href="#mobile-menu">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!--header-->
+
+<main id="main">
+    <section id="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <ul>
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href=""><i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="">Thời trang</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section><!--breadcrumbs-->
+
+    <section id="category-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="widget-filter">
+                        <h3><i class="fa fa-filter"></i> Bộ lọc tìm kiếm</h3>
+                        <div class="filter-item">
+                            <h4>Kích thước</h4>
+                            <div class="list-filter">
+                                <p><input type="checkbox"> L</p>
+                                <p><input type="checkbox"> XL</p>
+                                <p><input type="checkbox"> XXL</p>
+                                <p><input type="checkbox"> M</p>
+                                <p><input type="checkbox"> S</p>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <h4>Nơi Bán</h4>
+                            <div class="list-filter">
+                                <p><input type="checkbox"> Hà nội</p>
+                                <p><input type="checkbox"> Hồ chí mình</p>
+                                <p><input type="checkbox"> Bắc ninh</p>
+                                <p><input type="checkbox"> Hải phòng</p>
+                                <p><input type="checkbox"> Thái bình</p>
+                                <p><input type="checkbox"> Ninh bình</p>
+                                <p><input type="checkbox"> Thanh hoá</p>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <h4>Đơn vị vận chuyển</h4>
+                            <div class="list-filter">
+                                <p><input type="checkbox"> Nhanh</p>
+                                <p><input type="checkbox"> Hoả tốc</p>
+                                <p><input type="checkbox"> Tiết kiệm</p>
+                            </div>
+                        </div>
+                        <div class="filter-button">
+                            <a href="javascript:void(0)">Xoá tất cả</a>
+                        </div>
+                    </aside>
+                </div><!--filter-->
+
+                <div class="col-md-9">
+                    <div class="category-order">
+                        <span>Sắp xếp theo</span>
+                        <a href="" class="active">Phổ biến</a>
+                        <a href="">Mới nhất</a>
+                        <a href="">Bán chạy</a>
+                    </div>
+                    <div class="category-grid">
+                        <div class="row row-5">
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pd-5">
+                                <div class="product-item boxShadow">
+                                    <a href="">
+                                        <div class="product-item-thumbnail">
+                                            <img src="assets/images/product_1.jpeg" alt="">
+                                            <div class="product-sale">
+                                                <div class="product-sale-label">
+                                                    <p>50%</p>GIẢM
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-itemt-content">
+                                            <h3>Dép lê nam, Dép jodan nam quai ngang thời trang đi học cực đẹp giá
+                                                tốt</h3>
+                                            <div class="product-price">
+                                                <ins><span>100.000</span><span class="currency">đ</span></ins>
+                                                <del><span>100.000</span><span class="currency">đ</span></del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-pagination">
+                        <ul>
+                            <li><a href=""><i class="fa fa-angle-left"></i></a></li>
+                            <li><a href="">1</a></li>
+                            <li class="active"><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href=""><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--list-category-->
+            </div>
+        </div>
+    </section><!--category-page-->
+
+</main>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-top">
+                    <div class="footer-title">
+                        <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                    </div>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="">Trung Tâm Trợ Giúp</a></li>
+                            <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                            <li><a href="">Hướng Dẫn Bán Hàng</a></li>
+                            <li><a href="">Thanh Toán</a></li>
+                            <li><a href="">Vận Chuyển</a></li>
+                            <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+                            <li><a href="">Chăm Sóc Khách Hàng</a></li>
+                            <li><a href="">Chính Sách Bảo Hành</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-top">
+                    <div class="footer-title">
+                        <h3>VỀ Wasabe</h3>
+                    </div>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="">Tuyển Dụng</a></li>
+                            <li><a href="">Chính Sách Bảo Mật</a></li>
+                            <li><a href="">Chính Hãng</a></li>
+                            <li><a href="">Kênh Người Bán</a></li>
+                            <li><a href="">Flash Sales</a></li>
+                            <li><a href="">Liên Hệ Với Truyền Thông</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-top">
+                    <div class="footer-title">
+                        <h3>Thanh toán</h3>
+                    </div>
+                    <div class="footer-menu icon-payment">
+                        <ul>
+                            <li class="visa icon-bg"></li>
+                            <li class="master icon-bg"></li>
+                            <li class="jcb icon-bg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-top">
+                    <div class="footer-title">
+                        <h3>THEO DÕI CHÚNG TÔI TRÊN</h3>
+                    </div>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i> Instagram</a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-absolute">
+        © 2021 Wasabe. Tất cả các quyền được bảo lưu.
+    </div>
+</footer><!--footer-->
+</body>
+</html>
