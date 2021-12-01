@@ -207,7 +207,7 @@ jQuery(document).ready(function ($) {
             nav: false,
             smartSpeed: 200,
             slideSpeed: 500,
-            margin:10,
+            margin: 10,
             slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
             responsiveRefreshRate: 100
         }).on('changed.owl.carousel', syncPosition2);
@@ -267,9 +267,7 @@ jQuery(document).ready(function ($) {
     var input = document.querySelector('#qty');
     var btnminus = document.querySelector('.qtyminus');
     var btnplus = document.querySelector('.qtyplus');
-
     if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
-
         var min = Number(input.getAttribute('min'));
         var max = Number(input.getAttribute('max'));
         var step = Number(input.getAttribute('step'));
@@ -277,9 +275,9 @@ jQuery(document).ready(function ($) {
         function qtyminus(e) {
             var current = Number(input.value);
             var newval = (current - step);
-            if(newval < min) {
+            if (newval < min) {
                 newval = min;
-            } else if(newval > max) {
+            } else if (newval > max) {
                 newval = max;
             }
             input.value = Number(newval);
@@ -289,7 +287,7 @@ jQuery(document).ready(function ($) {
         function qtyplus(e) {
             var current = Number(input.value);
             var newval = (current + step);
-            if(newval > max) newval = max;
+            if (newval > max) newval = max;
             input.value = Number(newval);
             e.preventDefault();
         }
@@ -321,3 +319,30 @@ document.addEventListener(
         );
     }
 );
+
+
+function clickPlusQty($id) {
+    var input_cart = document.querySelector('#qty_' + $id);
+    var max_cart = Number(input_cart.getAttribute('max'));
+    var min_cart = Number(input_cart.getAttribute('min'));
+    var step_cart = Number(input_cart.getAttribute('step'));
+    var current_cart = Number(input_cart.value);
+    var newval_cart = (current_cart + step_cart);
+    if (newval_cart > max_cart) newval_cart = max_cart;
+    input_cart.value = Number(newval_cart);
+}
+
+function clickMinusQty($id) {
+    var input_cart = document.querySelector('#qty_' + $id);
+    var min_cart = Number(input_cart.getAttribute('min'));
+    var max_cart = Number(input_cart.getAttribute('max'));
+    var step_cart = Number(input_cart.getAttribute('step'));
+    var current_cart = Number(input_cart.value);
+    var newval_cart = (current_cart - step_cart);
+    if (newval_cart < min_cart) {
+        newval_cart = min_cart;
+    } else if (newval_cart > max_cart) {
+        newval_cart = max_cart;
+    }
+    input_cart.value = Number(newval_cart);
+}

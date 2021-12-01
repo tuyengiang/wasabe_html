@@ -1,0 +1,161 @@
+/**page-login**/
+section.page-content {
+    width: 100%;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+section.page-content .box-account {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+section.page-content .box-account h2 {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+section.page-content .box-account form label {
+    font-size: 15px;
+}
+
+section.page-content .box-account form {
+    padding: 15px;
+}
+
+section.page-content .box-account form {
+    font-size: 15px;
+}
+
+section.page-content .form-group a {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+section.page-content .btnLogin {
+    width: 100%;
+    display: inherit;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+section.page-content .box-account .login-text a {
+    color: var(--primary-color);
+}
+
+section.page-content .box-account .login-text {
+    text-align: center;
+    padding: 0 0 15px 0;
+    color: #000;
+    font-size: 15px;
+}
+
+/**cart**/
+.cart-grid {
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 2px 16px rgb(0 0 0 / 10%);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-grid .cart-thumbnail {
+    width: 100%;
+    height: 100px;
+}
+
+.cart-grid .cart-thumbnail img {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-grid .cart-info h3 {
+    font-size: 13px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 18px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.cart-grid .product-price ins {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-hover);
+}
+
+.cart-grid .product-price del {
+    color: #767676;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.cart-grid .form-quantity {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cart-grid .form-quantity button {
+    border: 1px solid rgba(0, 0, 0, .09);
+    background: transparent;
+    width: 32px;
+    color: rgba(0, 0, 0, .8);
+    height: 32px;
+    line-height: 32px;
+}
+
+.cart-grid .form-quantity input {
+    width: 50px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, .09);
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-radius: 0px !important;
+    text-align: center;
+}
+
+.cart-grid .btnRemove {
+    height: 32px !important;
+    line-height: 32px !important;
+    padding: 0px !important;
+    width: 32px;
+}
+
+.box-sidebar .checkout-item {
+    margin-bottom: 15px !important;
+}
+
+.box-sidebar .price {
+    font-weight: 700;
+    color: #ff3333;
+}
+
+form.form-checkout {
+    margin-top: 20px !important;
+}
+
+form.form-checkout .form-group {
+    margin-bottom: 15px !important;
+}
+
+form.form-checkout label b {
+    color: #ff3333;
+}
+
+form.form-checkout label {
+    font-size: 15px;
+}

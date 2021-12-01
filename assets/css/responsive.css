@@ -81,6 +81,28 @@
     .author-review .author-item:last-child {
         flex-basis: 100% !important;
     }
+
+    .cart-grid .form-quantity {
+        display: flex;
+        justify-content: left;
+        margin-top: 15px;
+    }
+
+    .box-sidebar {
+        margin-top: 30px;
+    }
+
+    .cart-grid {
+        position: relative;
+    }
+
+    .cart-grid .btnRemove {
+        margin-top: 15px;
+    }
+
+    section.page-content {
+        margin: 15px 0;
+    }
 }
 
 /* iPad landscape style here */
