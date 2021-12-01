@@ -113,6 +113,28 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
+    $('.owl-carousel.slide-product-3').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 5,
+            }
+        }
+    });
+
     //change icon
     $('.owl-carousel .owl-nav button.owl-prev').html('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
     $('.owl-carousel .owl-nav button.owl-next').html('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
@@ -239,6 +261,43 @@ jQuery(document).ready(function ($) {
 
     //light box
     $('#sync1 a').fancybox();
+
+
+    //quantity
+    var input = document.querySelector('#qty');
+    var btnminus = document.querySelector('.qtyminus');
+    var btnplus = document.querySelector('.qtyplus');
+
+    if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
+
+        var min = Number(input.getAttribute('min'));
+        var max = Number(input.getAttribute('max'));
+        var step = Number(input.getAttribute('step'));
+
+        function qtyminus(e) {
+            var current = Number(input.value);
+            var newval = (current - step);
+            if(newval < min) {
+                newval = min;
+            } else if(newval > max) {
+                newval = max;
+            }
+            input.value = Number(newval);
+            e.preventDefault();
+        }
+
+        function qtyplus(e) {
+            var current = Number(input.value);
+            var newval = (current + step);
+            if(newval > max) newval = max;
+            input.value = Number(newval);
+            e.preventDefault();
+        }
+
+        btnminus.addEventListener('click', qtyminus);
+        btnplus.addEventListener('click', qtyplus);
+
+    } // End if test
 });
 
 //menu mobile

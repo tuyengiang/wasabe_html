@@ -64,6 +64,23 @@
     .menu-mobile ul {
         padding: 0px !important;
     }
+
+    .author-review {
+        margin-top: 20px;
+    }
+
+    .product-info {
+        margin-top: 15px;
+    }
+
+    .author-review .author-item {
+        flex-basis: calc(100% / 2);
+        margin-bottom: 15px;
+    }
+
+    .author-review .author-item:last-child {
+        flex-basis: 100% !important;
+    }
 }
 
 /* iPad landscape style here */
